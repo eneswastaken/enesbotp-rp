@@ -142,7 +142,7 @@ client.on('interactionCreate', async interaction => {
 
         const embed = new EmbedBuilder()
             .setTitle("Bot Başvurusu!")
-            .setDescription("**Kullanıcı Bilgileri**\n*<:r_kod:1033847825856991323> Başvuru Yapan:* " + sahip + "\n\n**Bot Bilgileri**\n*<:r_bot:1033846888681722007> Bot ismi:* <@" + id + ">\n*<:r_bot:1033846888681722007> Bot id:* `" + id + "`\n*<:r_mod:1033846559600807996> Prefix:* `" + prefix + "`")
+            .setDescription("**Kullanıcı Bilgileri**\n*<:r_kod:1033847825856991323> Başvuru Yapan:* " + sahip + "\n\n**Bot Bilgileri**\n*<:r_bot:1033846888681722007> Bot ismi:* <@" + id + ">\n*<:r_id:1034142159709941860> Bot id:* `" + id + "`\n*<:r_mod:1033846559600807996> Prefix:* `" + prefix + "`")
             .setColor("#808080")
             .setThumbnail(link)
         let log = louritydb.get(`onay_${interaction.guild.id}`)
