@@ -232,7 +232,6 @@ client.on('interactionCreate', async interaction => {
             .setThumbnail("https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png")
             .setTitle("Bot Nasıl Eklenir?")
             .setDescription("• Bu sunucuda bot ekleme sistemi açık, bot eklemek için **Bot Ekle** butonuna tıklayıp ardından formu doldurmanız yeterli. Herhangi bir sorunda yetkiliye ulaşmayı unutmayın.")
-            .setFooter({ text: "Mercy Botlist" })
 
         const row1 = new Discord.ActionRowBuilder()
 
@@ -262,12 +261,10 @@ client.on('interactionCreate', async interaction => {
         const yetkii = new Discord.EmbedBuilder()
             .setTitle("Yetersiz Yetki!")
             .setDescription("**<:Kirmizi:1033666667181527062> Bu komutu kullanabilmek için `Yönetici` yetkisine ihtiyacın var!**")
-            .setFooter({ text: "Mercy Botlist" })
             .setColor("Red")
 
         const embed1 = new Discord.EmbedBuilder()
             .setDescription("<:Yesil:1033666717974548500> Botlist sistemi başarıyla **sıfırlandı**!")
-            .setFooter({ text: "Mercy Botlist" })
             .setColor("Green")
 
         if (!interaction.member.permissions.has(Discord.PermissionsBitField.Flags.ManageChannels)) return interaction.reply({ embeds: [yetkii], ephemeral: true })
@@ -324,7 +321,6 @@ client.on('interactionCreate', async interaction => {
 
         const yetkiii = new Discord.EmbedBuilder()
             .setDescription("**<:Kirmizi:1033666667181527062> Bu komutu kullanabilmek için `Yönetici` yetkisine ihtiyacın var!**")
-            .setFooter({ text: "Mercy Botlist" })
             .setColor("Red")
 
         const embed1 = new Discord.EmbedBuilder()
@@ -358,20 +354,19 @@ client.on('interactionCreate', async interaction => {
         const mesaj = new Discord.EmbedBuilder()
             .setTitle("Botlist Sistem Ayarları")
             .addFields(
-                { name: "**💾 Log Kanalı**", value: `<#${log || "Ayarlanmamış!"}>`, inline: true },
-                { name: "**👍 Onay Kanalı**", value: `<#${onayKanal || "Ayarlanmamış!"}>`, inline: true },
-                { name: "**🎈 Bot Ekle Kanalı**", value: `<#${botEkle || "Ayarlanmamış!"}>`, inline: true },
-                { name: "**📤 Ayrıldı Log Kanalı**", value: `<#${ayrildiLog || "Ayarlanmamış!"}>`, inline: true },
-                { name: "**🤖 Bot Rolü**", value: `<@&${botRol || "Ayarlanmamış!"}>`, inline: true },
-                { name: "**👨‍💻 Developer Rolü**", value: `<@&${devRol || "Ayarlanmamış!"}>`, inline: true },
-                { name: "**🔨 Yetkili Rolü**", value: `<@&${adminRol || "Ayarlanmamış!"}>` }
+                { name: "**<:r_ayarlar:1033687954419367936> Log Kanalı**", value: `<#${log || "Ayarlanmamış!"}>`, inline: true },
+                { name: "**<:r_tik:1033844095149408256> Onay Kanalı**", value: `<#${onayKanal || "Ayarlanmamış!"}>`, inline: true },
+                { name: "**<:r_arti:1033844966360879245> Bot Ekle Kanalı**", value: `<#${botEkle || "Ayarlanmamış!"}>`, inline: true },
+                { name: "**<:leave:1018637599952339015> Ayrıldı Log Kanalı**", value: `<#${ayrildiLog || "Ayarlanmamış!"}>`, inline: true },
+                { name: "**<:r_bot:1033846888681722007> Bot Rolü**", value: `<@&${botRol || "Ayarlanmamış!"}>`, inline: true },
+                { name: "**<:r_kod:1033847825856991323> Developer Rolü**", value: `<@&${devRol || "Ayarlanmamış!"}>`, inline: true },
+                { name: "**<:r_mod:1033846559600807996> Yetkili Rolü**", value: `<@&${adminRol || "Ayarlanmamış!"}>` }
             )
             .setColor("Yellow")
 
         const yetki = new Discord.EmbedBuilder()
             .setTitle("Yetersiz Yetki!")
-            .setDescription("> Bu komutu kullanabilmek için `Yönetici` yetkisine ihtiyacın var!")
-            .setFooter({ text: "Lourity Bot" })
+            .setDescription("**<:Kirmizi:1033666667181527062> Bu komutu kullanabilmek için `Yönetici` yetkisine ihtiyacın var!**")
             .setColor("Red")
         if (!interaction.member.permissions.has(Discord.PermissionsBitField.Flags.ManageChannels)) return interaction.reply({ embeds: [yetki], ephemeral: true });
 

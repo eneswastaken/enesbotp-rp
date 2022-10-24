@@ -3,7 +3,7 @@ const louritydb = require("croxydb");
 const { messageLink } = require("discord.js");
 // Lourity Code + Ayarlamalı + Slash Botlist Botu - PAYLAŞILMASI KESİNLİKLE YASAKTIR!!
 module.exports = {
-    name: "botlist-ayarla",
+    name: "botlist-ayarlaa",
     description: "Botlist sistemini ayarlarsınız!",
     type: 1,
     options: [
@@ -66,7 +66,6 @@ module.exports = {
         const yetki = new Discord.EmbedBuilder()
             .setColor("Red")
             .setDescription("**<:Kirmizi:1033666667181527062> Bu komutu kullanabilmek için `Yönetici` yetkisine sahip olmalısın!**")
-            .setFooter({ text: "Mercy Botlist" })
 
         if (!interaction.member.permissions.has(Discord.PermissionsBitField.Flags.Administrator)) return interaction.reply({ embeds: [yetki], ephemeral: true })
 
@@ -91,7 +90,6 @@ module.exports = {
         const basarili = new Discord.EmbedBuilder()
             .setColor("Green")
             .setDescription("**<:Yesil:1033666717974548500> Botlist sistemi başarıyla ayarlandı!**")
-            .setFooter("Mercy Botlist")
         interaction.reply({ embeds: [basarili], components: [row1] })
 
         const log = interaction.options.getChannel('botlist-log')
