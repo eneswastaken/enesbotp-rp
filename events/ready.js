@@ -26,5 +26,5 @@ module.exports = async (client) => {
   }
 
     console.log(`${client.user.tag} Aktif!`);
-    client.user.setActivity(`/botlist-ayarla | Botlist Botu`)
+    client.user.setActivity(`/yardım | Botlist Botu`)
 };
