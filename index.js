@@ -49,7 +49,7 @@ readdirSync('./events').forEach(e => {
 });
 
 
-client.login(TOKEN)
+client.login(process.env.token)
 
 
 const lourityModal = new ModalBuilder()
