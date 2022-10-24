@@ -175,7 +175,8 @@ client.on('interactionCreate', async interaction => {
         let link = "https://cdn.discordapp.com/avatars/" + bot + "/" + avatar + ".png?size=1024"
 
         const embed = new EmbedBuilder()
-            .setTitle("Bot Reddedildi!")
+            .setAuthor(message.guild.name, message.a.avatar({ dynamic: true }))
+            .setTitle("<@" + data.bot + ">", `Reddedildi!`)
             .setDescription("<@" + data.bot + "> adlı botun başvurusu maalesef reddedildi!")
             .setThumbnail(link)
             .setColor("Red")
