@@ -176,7 +176,7 @@ client.on('interactionCreate', async interaction => {
 
         const embed = new EmbedBuilder()
             .setTitle("Reddedildi!")
-            .setDescription("*• Bot ismi:* `" + data.bot + "`\n• Bot kimliği `" + id + "`adlı botun başvurusu maalesef reddedildi!")
+            .setDescription("*• Bot ismi:* <@" + data.bot + ">\n• Bot kimliği `" + data.bot + "`")
             .setThumbnail(link)
             .setColor("Red")
 
@@ -203,14 +203,13 @@ client.on('interactionCreate', async interaction => {
 
         let eklendimi = interaction.guild.members.cache.get(bot)
         const hata = new EmbedBuilder()
-            .setTitle("Başarısız!")
-            .setDescription("Önce botu sunucuya eklemelisin!")
+            .setDescription("**<:Kirmizi:1033666667181527062> | Önce botu sunucuya eklemelisin!**")
             .setColor("Red")
         if (!eklendimi) return interaction.reply({ embeds: [hata], ephemeral: true })
 
         const embed = new EmbedBuilder()
             .setTitle("Onaylandı!")
-            .setDescription("<@" + data.bot + "> adlı botun başvurusu kabul edildi!")
+            .setDescription("*• Bot ismi:* <@" + data.bot + ">\n• Bot kimliği `" + data.bot + "`")
             .setThumbnail(link)
             .setColor("Green")
         client.channels.cache.get(log).send({ content: "<@" + uye + ">", embeds: [embed] })
