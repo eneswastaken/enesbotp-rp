@@ -175,9 +175,8 @@ client.on('interactionCreate', async interaction => {
         let link = "https://cdn.discordapp.com/avatars/" + bot + "/" + avatar + ".png?size=1024"
 
         const embed = new EmbedBuilder()
-            .setAuthor(message.guild.name, message.a.avatar({ dynamic: true }))
-            .setTitle("<@" + data.bot + ">", `Reddedildi!`)
-            .setDescription("<@" + data.bot + "> adlı botun başvurusu maalesef reddedildi!")
+            .setTitle("Reddedildi!")
+            .setDescription("*• Bot ismi:* `" + data.bot + "`\n• Bot kimliği `" + id + "`adlı botun başvurusu maalesef reddedildi!")
             .setThumbnail(link)
             .setColor("Red")
 
@@ -210,7 +209,7 @@ client.on('interactionCreate', async interaction => {
         if (!eklendimi) return interaction.reply({ embeds: [hata], ephemeral: true })
 
         const embed = new EmbedBuilder()
-            .setTitle("Bot Onaylandı!")
+            .setTitle("Onaylandı!")
             .setDescription("<@" + data.bot + "> adlı botun başvurusu kabul edildi!")
             .setThumbnail(link)
             .setColor("Green")
