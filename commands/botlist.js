@@ -65,9 +65,8 @@ module.exports = {
 
         const yetki = new Discord.EmbedBuilder()
             .setColor("Red")
-            .setTitle("Yetersiz Yetki!")
-            .setDescription("> Bu komutu kullanabilmek için `Yönetici` yetkisine sahip olmalısın!")
-            .setFooter({ text: "Lourity Tester" })
+            .setDescription("**<:Kirmizi:1033666667181527062> Bu komutu kullanabilmek için `Yönetici` yetkisine sahip olmalısın!**")
+            .setFooter({ text: "Mercy Botlist" })
 
         if (!interaction.member.permissions.has(Discord.PermissionsBitField.Flags.Administrator)) return interaction.reply({ embeds: [yetki], ephemeral: true })
 
@@ -75,7 +74,7 @@ module.exports = {
 
             .addComponents(
                 new Discord.ButtonBuilder()
-                    .setEmoji("⚙️")
+                    .setEmoji("<:r_ayarlar:1033688642675294318>")
                     .setLabel("Ayarlar")
                     .setStyle(Discord.ButtonStyle.Secondary)
                     .setCustomId("ayarlar")
@@ -83,7 +82,7 @@ module.exports = {
 
             .addComponents(
                 new Discord.ButtonBuilder()
-                    .setEmoji("🗑️")
+                    .setEmoji("<:r_cop:1033688525926830140>")
                     .setLabel("Sistemi Sıfırla")
                     .setStyle(Discord.ButtonStyle.Danger)
                     .setCustomId("kapat")
@@ -91,9 +90,8 @@ module.exports = {
 
         const basarili = new Discord.EmbedBuilder()
             .setColor("Green")
-            .setTitle("Başarıyla Ayarlandı!")
-            .setDescription("Botlist sistemi başarıyla ayarlandı!")
-            .setFooter({ text: "Lourity Tester" })
+            .setDescription("**<:Yesil:1033666717974548500> Botlist sistemi başarıyla ayarlandı!**")
+            .setFooter("Mercy Botlist")
         interaction.reply({ embeds: [basarili], components: [row1] })
 
         const log = interaction.options.getChannel('botlist-log')

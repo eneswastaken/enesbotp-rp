@@ -83,8 +83,7 @@ client.on('interactionCreate', async (interaction) => {
     if (interaction.commandName === "bot-ekle") {
 
         const zatenEklenmis = new EmbedBuilder()
-            .setTitle("Başarısız!")
-            .setDescription("Zaten eklenmiş olan bir botun var!")
+            .setDescription("**<:Kirmizi:1033666667181527062> Zaten eklenmiş olan bir botun var!**")
             .setColor("Red")
         let varmi = louritydb.get(`ekledi_${interaction.user.id}`)
         if (varmi) return interaction.reply({ embeds: [zatenEklenmis], ephemeral: true })
@@ -103,13 +102,13 @@ client.on('interactionCreate', async interaction => {
         let ayrildiLog = louritydb.get(`ayrildiLog_${interaction.guild.id}`)
         let adminRol = louritydb.get(`adminRol_${interaction.guild.id}`)
 
-        if (!onay) return interaction.reply({ content: "Botlist sistemi ayarlanmamış!", ephemeral: true })
-        if (!logg) return interaction.reply({ content: "Botlist sistemi ayarlanmamış!", ephemeral: true })
-        if (!botRol) return interaction.reply({ content: "Botlist sistemi ayarlanmamış!", ephemeral: true })
-        if (!devRol) return interaction.reply({ content: "Botlist sistemi ayarlanmamış!", ephemeral: true })
-        if (!adminRol) return interaction.reply({ content: "Botlist sistemi ayarlanmamış!", ephemeral: true })
-        if (!botekle) return interaction.reply({ content: "Botlist sistemi ayarlanmamış!", ephemeral: true })
-        if (!ayrildiLog) return interaction.reply({ content: "Botlist sistemi ayarlanmamış!", ephemeral: true })
+        if (!onay) return interaction.reply({ content: "**<:Kirmizi:1033666667181527062> Botlist sistemi ayarlanmamış!**", ephemeral: true })
+        if (!logg) return interaction.reply({ content: "**<:Kirmizi:1033666667181527062> Botlist sistemi ayarlanmamış!**", ephemeral: true })
+        if (!botRol) return interaction.reply({ content: "**<:Kirmizi:1033666667181527062> Botlist sistemi ayarlanmamış!**", ephemeral: true })
+        if (!devRol) return interaction.reply({ content: "**<:Kirmizi:1033666667181527062> Botlist sistemi ayarlanmamış!**", ephemeral: true })
+        if (!adminRol) return interaction.reply({ content: "**<:Kirmizi:1033666667181527062> Botlist sistemi ayarlanmamış!**", ephemeral: true })
+        if (!botekle) return interaction.reply({ content: "**<:Kirmizi:1033666667181527062> Botlist sistemi ayarlanmamış!**", ephemeral: true })
+        if (!ayrildiLog) return interaction.reply({ content: "**<:Kirmizi:1033666667181527062> Botlist sistemi ayarlanmamış!**", ephemeral: true })
 
         const Discord = require("discord.js")
         const id = interaction.fields.getTextInputValue("id")
@@ -138,14 +137,13 @@ client.on('interactionCreate', async interaction => {
         let link = "https://cdn.discordapp.com/avatars/" + id + "/" + avatar + ".png?size=1024"
 
         const gonderildi = new EmbedBuilder()
-            .setTitle("Başarılı!")
-            .setDescription("Bot başvurun başarıyla yetkililere gönderildi!")
+            .setDescription("<:Yesil:1033666717974548500> Bot başvurun başarıyla yetkililere gönderildi!")
             .setColor("Green")
 
         const embed = new EmbedBuilder()
-            .setTitle("Sıraya Yeni Bot Eklendi!")
-            .setDescription("Bot Sahibi: " + sahip + "\n\n**İD:** ```" + id + "``` **Prefix:** ```" + prefix + "```")
-            .setColor("Yellow")
+            .setTitle("Bot Başvurusu!")
+            .setDescription("**Kullanıcı Bilgileri**\n*Başvuru Yapan:* " + sahip + "\n*İD:* `" + sahip + "`\n\n**Bot Bilgileri**\n*Bot ıd:* `" + id + "`\n*Prefix:* `" + prefix + "`")
+            .setColor("#808080")
             .setThumbnail(link)
         let log = louritydb.get(`onay_${interaction.guild.id}`)
 
@@ -170,7 +168,7 @@ client.on('interactionCreate', async interaction => {
 
         let admin = louritydb.get(`adminRol_${interaction.guild.id}`)
 
-        if (!interaction.member.roles.cache.has(admin)) return interaction.reply({ content: "Bu işlemi gerçekleştirmek için <@&" + admin + "> rolüne sahip olmalısın!", ephemeral: true })
+        if (!interaction.member.roles.cache.has(admin)) return interaction.reply({ content: "**<:Kirmizi:1033666667181527062> Bu işlemi gerçekleştirmek için <@&" + admin + "> rolüne sahip olmalısın!**", ephemeral: true })
 
         let a = await client.users.fetch(bot);
         let avatar = a.avatar
@@ -190,7 +188,7 @@ client.on('interactionCreate', async interaction => {
 
         let admin = louritydb.get(`adminRol_${interaction.guild.id}`)
 
-        if (!interaction.member.roles.cache.has(admin)) return interaction.reply({ content: "Bu işlemi gerçekleştirmek için <@&" + admin + "> rolüne sahip olmalısın!", ephemeral: true })
+        if (!interaction.member.roles.cache.has(admin)) return interaction.reply({ content: "**<:Kirmizi:1033666667181527062> Bu işlemi gerçekleştirmek için <@&" + admin + "> rolüne sahip olmalısın!**", ephemeral: true })
 
         let message = await interaction.channel.messages.fetch(interaction.message.id)
         let log = louritydb.get(`log_${interaction.guild.id}`)
@@ -231,15 +229,16 @@ client.on('interactionCreate', async interaction => {
 
         const menu = new Discord.EmbedBuilder()
             .setColor("000000")
-            .setTitle("Botumu Nasıl Eklerim?")
-            .setDescription("> Aşağıdaki **Bot Ekle** butonuna basarak botunu ekleyebilirsin!")
-            .setFooter({ text: "Lourity Tester" })
+            .setThumbnail("https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png")
+            .setTitle("Bot Nasıl Eklenir?")
+            .setDescription("• Bu sunucuda bot ekleme sistemi açık, bot eklemek için **Bot Ekle** butonuna tıklayıp ardından formu doldurmanız yeterli. Herhangi bir sorunda yetkiliye ulaşmayı unutmayın.")
+            .setFooter({ text: "Mercy Botlist" })
 
         const row1 = new Discord.ActionRowBuilder()
 
             .addComponents(
                 new Discord.ButtonBuilder()
-                    .setEmoji("🤖")
+                    .setEmoji("<:robot:1033691399926845500>")
                     .setLabel("Bot Ekle")
                     .setStyle(Discord.ButtonStyle.Secondary)
                     .setCustomId("bot-ekle")
@@ -262,13 +261,13 @@ client.on('interactionCreate', async interaction => {
     if (interaction.customId === "kapat") {
         const yetkii = new Discord.EmbedBuilder()
             .setTitle("Yetersiz Yetki!")
-            .setDescription("> Bu komutu kullanabilmek için `Yönetici` yetkisine ihtiyacın var!")
-            .setFooter({ text: "Lourity Bot" })
+            .setDescription("**<:Kirmizi:1033666667181527062> Bu komutu kullanabilmek için `Yönetici` yetkisine ihtiyacın var!**")
+            .setFooter({ text: "Mercy Botlist" })
             .setColor("Red")
 
         const embed1 = new Discord.EmbedBuilder()
-            .setTitle("Başarıyla Sıfırlandı!")
-            .setDescription("> Botlist sistemi başarıyla **sıfırlandı**!")
+            .setDescription("<:Yesil:1033666717974548500> Botlist sistemi başarıyla **sıfırlandı**!")
+            .setFooter({ text: "Mercy Botlist" })
             .setColor("Green")
 
         if (!interaction.member.permissions.has(Discord.PermissionsBitField.Flags.ManageChannels)) return interaction.reply({ embeds: [yetkii], ephemeral: true })
@@ -287,7 +286,7 @@ client.on('interactionCreate', async interaction => {
 const unban = new Discord.ActionRowBuilder()
     .addComponents(
         new Discord.ButtonBuilder()
-            .setEmoji("🔓")
+            .setEmoji("<:ban:1033810404704538735>")
             .setLabel("Banı Kaldır")
             .setStyle(Discord.ButtonStyle.Danger)
             .setCustomId("unban")
@@ -324,19 +323,17 @@ client.on('interactionCreate', async interaction => {
         let lourityData = data
 
         const yetkiii = new Discord.EmbedBuilder()
-            .setTitle("Yetersiz Yetki!")
-            .setDescription("> Bu komutu kullanabilmek için `Yönetici` yetkisine ihtiyacın var!")
-            .setFooter({ text: "Lourity Bot" })
+            .setDescription("**<:Kirmizi:1033666667181527062> Bu komutu kullanabilmek için `Yönetici` yetkisine ihtiyacın var!**")
+            .setFooter({ text: "Mercy Botlist" })
             .setColor("Red")
 
         const embed1 = new Discord.EmbedBuilder()
-            .setTitle("Başarılı!")
-            .setDescription("> Botun banı başarıyla **kaldırıldı**!")
+            .setDescription("<:Yesil:1033666717974548500> Botun banı başarıyla **kaldırıldı**!")
             .setColor("Green")
 
         if (!interaction.member.permissions.has(Discord.PermissionsBitField.Flags.ManageChannels)) return interaction.reply({ embeds: [yetkiii], ephemeral: true });
 
-        if (!lourityData) return interaction.reply({ content: "Bu botun banı zaten kaldırılmış!", ephemeral: true })
+        if (!lourityData) return interaction.reply({ content: "**<:Kirmizi:1033666667181527062> Bu botun banı zaten kaldırılmış!**", ephemeral: true })
 
         interaction.guild.members.unban(lourityData).catch(() => { })
         message.delete()
