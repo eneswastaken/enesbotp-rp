@@ -14,7 +14,7 @@ module.exports = {
     ],
   run: async(client, interaction) => {
 
-    if(!interaction.member.permissions.has(PermissionsBitField.Flags.ManageRoles)) return interaction.reply({content: "**<:Kirmizi:1033666667181527062> | Bu komutu kullanabilmek için `Yönetici` yetkisine ihtiyacın var!**", ephemeral: true})
+    if(!interaction.member.permissions.has(PermissionsBitField.Flags.ManageRoles)) return interaction.reply({content: "**<:Kirmizi:1033666667181527062> | Bu komutu kullanabilmek için `Rolleri Yönet` yetkisine ihtiyacın var!**", ephemeral: true})
     const user = interaction.options.getMember('user')
 let kayıtlı = db.fetch(`kayıtlı_${interaction.guild.id}`)
 if (!kayıtlı) return interaction.reply("**<:Kirmizi:1033666667181527062> | Abone rolü ayarlanmamış!**")
