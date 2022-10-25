@@ -19,7 +19,7 @@ module.exports = {
     if(!interaction.member.permissions.has(PermissionsBitField.Flags.ManageRoles)) return interaction.reply({content: "**<:Kirmizi:1033666667181527062> | Bu komutu kullanabilmek için `Yönetici` yetkisine ihtiyacın var!**", ephemeral: true})
     const rol = interaction.options.getRole('rol')
     db.set(`kayıtlı_${interaction.guild.id}`, rol.id)
-    interaction.reply({content: "Abone Rolü Başarıyla <@&"+rol+"> Olarak Ayarlandı."})
+    interaction.reply({content: "**<:Yesil:1033666717974548500> | Abone Rolü Başarıyla <@&"+rol+"> Olarak Ayarlandı.**"})
 }
 
 };

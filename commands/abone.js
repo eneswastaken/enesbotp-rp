@@ -20,7 +20,7 @@ let kayıtlı = db.fetch(`kayıtlı_${interaction.guild.id}`)
 if (!kayıtlı) return interaction.reply("**<:Kirmizi:1033666667181527062> | Abone rolü ayarlanmamış!**")
 interaction.guild.members.cache.get(user.id).roles.add(kayıtlı)
 
-    interaction.reply({content: `Başarıyla ${user} Kullanıcısını Kayıt Ettim!`})
+    interaction.reply({content: `**<:Yesil:1033666717974548500> | Başarıyla ${user} Adlı Kullanıcıya \`Abone\` Rolü Verildi!**`})
 }
 
 };
