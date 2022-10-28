@@ -17,7 +17,15 @@ module.exports = {
     const row = new Discord.ActionRowBuilder()
     .addComponents(
 new Discord.ButtonBuilder()
-.setLabel("Botu Ekle")
+.setLabel("Moderasyon")
+.setStyle(Discord.ButtonStyle.Success)
+.setCustomId("Moderasyon"),
+new Discord.ButtonBuilder()
+.setLabel("Kullanıcı")
+.setStyle(Discord.ButtonStyle.Primary)
+.setCustomId("kullanıcı"),
+new Discord.ButtonBuilder()
+.setLabel("Davet Et")
 .setStyle(Discord.ButtonStyle.Link)
 .setURL("https://discord.com/api/oauth2/authorize?client_id=1034130573796593714&permissions=8&scope=bot"),
 new Discord.ButtonBuilder()
