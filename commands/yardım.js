@@ -17,13 +17,17 @@ module.exports = {
     const row = new Discord.ActionRowBuilder()
     .addComponents(
 new Discord.ButtonBuilder()
+.setLabel("Botlist")
+.setStyle(Discord.ButtonStyle.Danger)
+.setCustomId("kayıt"),
+new Discord.ButtonBuilder()
 .setLabel("Moderasyon")
 .setStyle(Discord.ButtonStyle.Success)
-.setCustomId("Moderasyon"),
+.setCustomId("moderasyon"),
 new Discord.ButtonBuilder()
 .setLabel("Kullanıcı")
 .setStyle(Discord.ButtonStyle.Primary)
-.setCustomId("kullanıcı"),
+.setCustomId("Kullanıcı"),
 new Discord.ButtonBuilder()
 .setLabel("Davet Et")
 .setStyle(Discord.ButtonStyle.Link)
