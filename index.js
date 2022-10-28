@@ -380,25 +380,28 @@ client.on("interactionCreate", async interaction => {
   if(interaction.customId == "moderasyon") {
 const embed = new Discord.EmbedBuilder()
 .setTitle("Moderasyon Yardım Menüsü!")
-.setThumbnail('https://media.discordapp.net/attachments/1022843509016895568/1023671325878931550/IMG_6557.png?width=433&height=433')
-.setDescription("<:r_mod:1033846559600807996> **/ban** - Sunucudan Kullanıcı Banlaman\n**/kick** - Sunucudan Kullanıcı Atma\n**/forceban** - Sunucudan Kalıcı Ban Atar\n")
+.setThumbnail('https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png')
+.setDescription("<:r_mod:1033846559600807996> **/ban** - Sunucudan Kullanıcı Banlaman\n<:r_mod:1033846559600807996> **/kick** - Sunucudan Kullanıcı Atma\n<:r_mod:1033846559600807996> **/forceban** - Sunucudan Kalıcı Ban Atar\n<:r_mod:1033846559600807996> **/unban** - Banlanan Üyenin Banını Kaldırır\n<:r_mod:1033846559600807996> **/sil** - Kanaldaki Mesajları Temizler\n<:r_mod:1033846559600807996> **/rol-al** - Beriltilen Kişiden Rolü Alır\n<:r_mod:1033846559600807996> **/rol-ver** - Beriltilen Kişiye Rol Verir\n<:r_mod:1033846559600807996> **/abone-rol** - Abone Rol Ayarlarsını!\n<:r_mod:1033846559600807996> **/abone** - Beriltilen Kişiye Abone Rolü Verirsiniz!")
 .setColor("#000000")
+.setFooter({ text: "Mercy Botlist" })
 interaction.reply({embeds: [embed], components: [], ephemeral: true})
   }
   if(interaction.customId == "kayıt") {
     const embed = new Discord.EmbedBuilder()
     .setTitle("Botlist Yardım Menüsü!")
-    .setThumbnail('https://media.discordapp.net/attachments/1022843509016895568/1023671325878931550/IMG_6557.png?width=433&height=433')
-    .setDescription("<:r_bot:1033846888681722007>")
+    .setThumbnail('https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png')
+    .setDescription("<:r_bot:1033846888681722007> **/botlist-ayarla** - Basit Kullanışlı Botlist Ayarlaması")
     .setColor("#000000")
+    .setFooter({ text: "Mercy Botlist" })
     interaction.reply({embeds: [embed], components: [], ephemeral: true})
   }
   if(interaction.customId == "Kullanıcı") {
     const embed = new Discord.EmbedBuilder()
     .setTitle("Kullanıcı Yardım Menüsü!")
-    .setThumbnail('https://media.discordapp.net/attachments/1022843509016895568/1023671325878931550/IMG_6557.png?width=433&height=433')
-    .setDescription("<:r_kullanici:1034207931178168412>")
+    .setThumbnail('https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png')
+    .setDescription("<:r_kullanici:1034207931178168412> **/ping** - Botun Ping Durumunu Gösterir\n<:r_kullanici:1034207931178168412> **/avatar** - Etiketlenen Kişinin Avatarını Atar\n<:r_kullanici:1034207931178168412> **/istatistik** - Botun İstatistik Bilgilerini Listeler")
     .setColor("#000000")
+    .setFooter({ text: "Mercy Botlist" })
     interaction.reply({embeds: [embed], components: [], ephemeral: true})
   }
 })
