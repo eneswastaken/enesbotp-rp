@@ -26,5 +26,6 @@ module.exports = async (client) => {
   }
 
     console.log(`${client.user.tag} Aktif!`);
-    client.user.setActivity(`/yardım`)
+    client.user.setActivity(`/yardım | ${client.users.cache.size} Kullanıcı`)
+    client.user.setStatus("dnd");
 };
