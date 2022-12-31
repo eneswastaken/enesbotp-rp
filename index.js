@@ -141,8 +141,7 @@ client.on('interactionCreate', async interaction => {
             .setColor("Green")
 
         const embed = new EmbedBuilder()
-            .setTitle("Başvuru")
-            .setDescription("**• Bilgi:** Onaylamak, reddetmek veya botu eklemek için aşağıdaki butonları kullan.\n**• Bot ismi:** <@" + id + ">\n**• Bot kimliği:** `" + id + "`\n**• Bot kullanım şartları:** Bilinmiyor\n**• Bot gizlilik politikası:** Bilinmiyor\nBot prefixiKullanıcı Bilgileri**\n*<:r_kod:1033847825856991323> Başvuru Yapan:* " + sahip + "\n\n**Bot Bilgileri**\n*<:r_bot:1033846888681722007> Bot ismi:* <@" + id + ">\n*<:r_id:1034142159709941860> Bot id:* `" + id + "`\n*<:r_mod:1033846559600807996> Prefix:* `" + prefix + "`")
+            .setDescription("**• Bilgi:** Onaylamak, reddetmek veya botu eklemek için aşağıdaki butonları kullan.\n\n**• Bot ismi:** <@" + id + ">\n**• Bot kimliği:** " + id + "\n**• Bot kullanım şartları:** Bilinmiyor\n**• Bot gizlilik politikası:** Bilinmiyor\n\n**Bot prefixi**\n```" + prefix + "```\n**Bot sahibiKullanıcı Bilgileri**\n*<:r_kod:1033847825856991323> Başvuru Yapan:* " + sahip + "\n\n**Bot Bilgileri**\n*<:r_bot:1033846888681722007> Bot ismi:* <@" + id + ">\n*<:r_id:1034142159709941860> Bot id:* `" + id + "`\n*<:r_mod:1033846559600807996> Prefix:* `" + prefix + "`")
             .setColor("#808080")
             .setThumbnail(link)
         let log = louritydb.get(`onay_${interaction.guild.id}`)
