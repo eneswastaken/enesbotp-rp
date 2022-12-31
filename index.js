@@ -380,7 +380,7 @@ client.on("interactionCreate", async interaction => {
   if(interaction.customId == "moderasyon") {
 const embed = new Discord.EmbedBuilder()
 .setTitle("Moderasyon menüsü | Mercy Botlist!")
-.setDescription("<:r_mod:1033846559600807996> **/ban****• /botlist-ayarla 🠮** Sunucudan Kullanıcı Banlaman\n<:r_mod:1033846559600807996> **/kick** **• /botlist-ayarla 🠮** Sunucudan Kullanıcı Atma\n<:r_mod:1033846559600807996> **/forceban** **• /botlist-ayarla 🠮** Sunucudan Kalıcı Ban Atar\n<:r_mod:1033846559600807996> **/unban** **• /botlist-ayarla 🠮** Banlanan Üyenin Banını Kaldırır\n<:r_mod:1033846559600807996> **/sil** **• /botlist-ayarla 🠮** Kanaldaki Mesajları Temizler\n<:r_mod:1033846559600807996> **/rol-al** **• /botlist-ayarla 🠮** Beriltilen Kişiden Rolü Alır\n<:r_mod:1033846559600807996> **/rol-ver** - Beriltilen Kişiye Rol Verir\n<:r_mod:1033846559600807996> **/abone-rol** - Abone Rol Ayarlarsını!\n<:r_mod:1033846559600807996> **/abone** - Beriltilen Kişiye Abone Rolü Verirsiniz!")
+.setDescription("**• /ban 🠮** Sunucudan Kullanıcı Banlaman\n**• /kick 🠮** Sunucudan Kullanıcı Atma\n**• /forceban 🠮** Sunucudan Kalıcı Ban Atar\n**• /unban 🠮** Banlanan Üyenin Banını Kaldırır\n**• /sil 🠮** Kanaldaki Mesajları Temizler\n**• /rol-al 🠮** Beriltilen Kişiden Rolü Alır\n**• /rol-ver 🠮** Beriltilen Kişiye Rol Verir\n**• /abone-rol 🠮** Abone Rol Ayarlarsını!\n**• /abone 🠮** Beriltilen Kişiye Abone Rolü Verirsiniz!")
 .setColor("#808080")
 interaction.reply({embeds: [embed], components: [], ephemeral: true})
   }
