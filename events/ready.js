@@ -26,6 +26,6 @@ module.exports = async (client) => {
   }
 
     console.log(`${client.user.tag} Aktif!`);
-    client.user.setActivity(`/yardım | ${client.users.cache.size} Kullanıcı`)
+    client.user.setActivity(`🎄 • Mutlu Yıllar | /yardım | #new2023🎅`)
     client.user.setStatus("dnd");
 };
