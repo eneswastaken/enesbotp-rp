@@ -142,6 +142,7 @@ client.on('interactionCreate', async interaction => {
 
         const embed = new EmbedBuilder()
             .setTitle("Yeni Başvuru")
+            .addFields({ name: `Şarkıyı isteyen:`, value: ``, inline: true })
             .setDescription("**• Bilgi:** Onaylamak, reddetmek veya botu eklemek için aşağıdaki butonları kullan.\n\n**• Bot sahibi:**\n" + sahip + "\n**• Bot ismi:**\n**<@" + id + ">**\n**• Bot kullanım şartları:**\nBilinmiyor\n**• Bot gizlilik politikası:**\nBilinmiyor\n\n**Bot prefixi**\n```" + prefix + "```\n**Bot kimliği** ```" + id + "```")
             .setColor("#808080")
             .setThumbnail(link)
