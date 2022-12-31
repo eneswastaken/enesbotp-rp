@@ -227,11 +227,11 @@ client.on('interactionCreate', async interaction => {
         let botekle = louritydb.get(`botekle_${interaction.guild.id}`)
 
         const menu = new Discord.EmbedBuilder()
-            .setColor("000000")
+            .setColor("808080")
             .setThumbnail("https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png")
-            .setTitle("Bot Nasıl Eklenir?")
+            .setAuthor({ name: `Bot Nasıl Eklenir?`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
             .setDescription("• Bu sunucuda bot ekleme sistemi açık, bot eklemek için **Bot Ekle** butonuna tıklayıp ardından formu doldurmanız yeterli. Herhangi bir sorunda yetkiliye ulaşmayı unutmayın.")
-            .setFooter({ text: "Mercy Botlist" })
+            .setFooter({ text: "©️ Mercy Botlist #2022" })
 
         const row1 = new Discord.ActionRowBuilder()
 
@@ -352,7 +352,7 @@ client.on('interactionCreate', async interaction => {
         let adminRol = louritydb.get(`adminRol_${interaction.guild.id}`)
 
         const mesaj = new Discord.EmbedBuilder()
-            .setTitle("Botlist Sistem Ayarları")
+            .setAuthor({ name: `Botlist Sistem Ayarları`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
             .addFields(
                 { name: "**<:r_ayarlar:1033687954419367936> Log Kanalı**", value: `<#${log || "Ayarlanmamış!"}>`, inline: true },
                 { name: "**<:r_tik:1033844095149408256> Onay Kanalı**", value: `<#${onayKanal || "Ayarlanmamış!"}>`, inline: true },
