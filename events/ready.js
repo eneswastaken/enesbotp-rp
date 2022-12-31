@@ -27,5 +27,5 @@ module.exports = async (client) => {
 
     console.log(`${client.user.tag} Aktif!`);
     client.user.setActivity(`🎄 • Mutlu Yıllar | /yardım | #new2023🎅`)
-    client.user.setStatus("dnd");
+    client.user.setStatus("idle");
 };
