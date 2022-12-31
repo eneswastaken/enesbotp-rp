@@ -141,7 +141,7 @@ client.on('interactionCreate', async interaction => {
             .setColor("Green")
 
         const embed = new EmbedBuilder()
-            .setDescription("**• Bilgi:** Onaylamak, reddetmek veya botu eklemek için aşağıdaki butonları kullan.\n\n`" + sahip + "`**• Bot ismi:** <@" + id + ">\n**• Bot kimliği:** " + id + "\n**• Bot kullanım şartları:** Bilinmiyor\n**• Bot gizlilik politikası:** Bilinmiyor\n\n**Bot prefixi**\n```" + prefix + "```\n**Bot sahibi** ```" + sahip + "```")
+            .setDescription("**• Bilgi:** Onaylamak, reddetmek veya botu eklemek için aşağıdaki butonları kullan.\n\n**• Bot sahibi** " + sahip + "\n**• Bot ismi:** <@" + id + ">\n**• Bot kimliği:** " + id + "\n**• Bot kullanım şartları:** Bilinmiyor\n**• Bot gizlilik politikası:** Bilinmiyor\n\n**Bot prefixi**\n```" + prefix + "```")
             .setColor("#808080")
             .setThumbnail(link)
         let log = louritydb.get(`onay_${interaction.guild.id}`)
