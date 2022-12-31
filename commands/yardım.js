@@ -9,9 +9,9 @@ module.exports = {
   run: async(client, interaction) => {
 
     const embed = new EmbedBuilder()
-    .setTitle("Mercy Botlist - Yardım!")
+    .setTitle("Yardım menüsü | Mercy Botlist!")
     .setThumbnail("https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png")
-    .setDescription("<:r_bot:1033846888681722007> \`Botlist\` Komutları İçin Tıkla\n<:r_mod:1033846559600807996> \`Moderasyon\` Komutları İçin Tıkla\n<:r_kullanici:1034207931178168412> \`Kullanıcı\` Komutları İçin Tıkla")
+    .setDescription("• Yardım almak için en doğru yerdesin, bir sorunun olursa destek sunucusunda seni bekliyor olacağız.\n\n<:r_arti:1033844966360879245> | Yenilikler/Güncellemeler\n• Botlist sistemini yeniledik ve sorunları giderdik. Artık daha kullanışlı. [Bilgi İçin Tıkla.](https://discord.gg/ZyQWrgKg66)\n<:r_ayarlar:1033687954419367936> | Komutlar [3]<:r_bot:1033846888681722007> \`Botlist\` Komutları İçin Tıkla\n<:r_mod:1033846559600807996> \`Moderasyon\` Komutları İçin Tıkla\n<:r_kullanici:1034207931178168412> \`Kullanıcı\` Komutları İçin Tıkla")
     .setColor("000000")
     const row = new Discord.ActionRowBuilder()
     .addComponents(
