@@ -380,21 +380,21 @@ client.on("interactionCreate", async interaction => {
   if(interaction.customId == "moderasyon") {
 const embed = new Discord.EmbedBuilder()
 .setAuthor({ name: `Moderasyon menüsü | Mercy Botlist!`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
-.setDescription("**• /ban 🠮** Sunucudan Kullanıcı Banlaman\n**• /kick 🠮** Sunucudan Kullanıcı Atma\n**• /forceban 🠮** Sunucudan Kalıcı Ban Atar\n**• /unban 🠮** Banlanan Üyenin Banını Kaldırır\n**• /sil 🠮** Kanaldaki Mesajları Temizler\n**• /rol-al 🠮** Beriltilen Kişiden Rolü Alır\n**• /rol-ver 🠮** Beriltilen Kişiye Rol Verir\n**• /abone-rol 🠮** Abone Rol Ayarlarsını!\n**• /abone 🠮** Beriltilen Kişiye Abone Rolü Verirsiniz!")
+.setDescription("**• /ban -** Sunucudan Kullanıcı Banlaman\n**• /kick -** Sunucudan Kullanıcı Atma\n**• /forceban -** Sunucudan Kalıcı Ban Atar\n**• /unban -** Banlanan Üyenin Banını Kaldırır\n**• /sil -** Kanaldaki Mesajları Temizler\n**• /rol-al -** Beriltilen Kişiden Rolü Alır\n**• /rol-ver -** Beriltilen Kişiye Rol Verir\n**• /abone-rol -** Abone Rol Ayarlarsını!\n**• /abone -** Beriltilen Kişiye Abone Rolü Verirsiniz!")
 .setColor("#808080")
 interaction.reply({embeds: [embed], components: [], ephemeral: true})
   }
   if(interaction.customId == "kayıt") {
     const embed = new Discord.EmbedBuilder()
     .setAuthor({ name: `Botlist menüsü | Mercy Botlist!`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
-    .setDescription("**• /botlist-ayarla 🠮** Basit Kullanışlı Botlist Ayarlaması\n**• /botekleme-şart 🠮** Hazır Bot Ekletme Kuralları")
+    .setDescription("**• /botlist-ayarla -** Basit Kullanışlı Botlist Ayarlaması\n**• /botekleme-şart -** Hazır Bot Ekletme Kuralları")
     .setColor("#808080")
     interaction.reply({embeds: [embed], components: [], ephemeral: true})
   }
   if(interaction.customId == "Kullanıcı") {
     const embed = new Discord.EmbedBuilder()
     .setAuthor({ name: `Kullanıcı menüsü | Mercy Botlist!`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
-    .setDescription("**• /ping 🠮** Botun Ping Durumunu Gösterir\n**• /avatar 🠮** Etiketlenen Kişinin Avatarını Atar\n**• /istatistik 🠮** Botun İstatistik Bilgilerini Listeler")
+    .setDescription("**• /ping ** Botun Ping Durumunu Gösterir\n**• /avatar -** Etiketlenen Kişinin Avatarını Atar\n**• /istatistik -** Botun İstatistik Bilgilerini Listeler")
     .setColor("#808080")
     interaction.reply({embeds: [embed], components: [], ephemeral: true})
   }
