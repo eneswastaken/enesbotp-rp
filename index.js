@@ -118,14 +118,17 @@ client.on('interactionCreate', async interaction => {
         const row = new Discord.ActionRowBuilder()
             .addComponents(
                 new Discord.ButtonBuilder()
+                    .setEmoji("<:robot:1033691399926845500>")
                     .setLabel("Botu Ekle")
                     .setStyle(Discord.ButtonStyle.Link)
                     .setURL("https://discord.com/oauth2/authorize?client_id=" + id + "&scope=bot&permissions=0"),
                 new Discord.ButtonBuilder()
+                    .setEmoji("<:Yesil:1033666717974548500>")
                     .setLabel("Onayla")
                     .setStyle(Discord.ButtonStyle.Success)
                     .setCustomId("onayla"),
                 new Discord.ButtonBuilder()
+                    .setEmoji("<:Kirmizi:1033666667181527062>")
                     .setLabel("Reddet")
                     .setStyle(Discord.ButtonStyle.Danger)
                     .setCustomId("reddet")
@@ -142,7 +145,7 @@ client.on('interactionCreate', async interaction => {
 
         const embed = new EmbedBuilder()
             .setAuthor({ name: `Yeni Başvuru Geldi.`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
-            .setDescription("**• Bilgi:** Onaylamak, reddetmek veya botu eklemek için aşağıdaki butonları kullan.\n\n**• Bot sahibi:**\n" + sahip + "\n**• Bot ismi:**\n**<@" + id + ">**\n**• Bot kullanım şartları:**\nBilinmiyor\n**• Bot gizlilik politikası:**\nBilinmiyor\n\n**Bot prefixi**\n```" + prefix + "```\n**Bot kimliği** ```" + id + "```")
+            .setDescription("**• Bilgi:** Onaylamak, reddetmek veya botu eklemek için aşağıdaki butonları kullan.\n\n**• Bot Sahibi:** " + sahip + "\n**• Bot ismi:** **<@" + id + ">**\n\n**Bot prefixi**\n" + prefix + " \n**Bot kimliği** " + id + "")
             .setColor("#808080")
             .setThumbnail(link)
         let log = louritydb.get(`onay_${interaction.guild.id}`)
