@@ -141,7 +141,7 @@ client.on('interactionCreate', async interaction => {
             .setColor("Green")
 
         const embed = new EmbedBuilder()
-            .setAuthor({ name: `Yardım menüsü | Mercy Botlist!`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
+            .setAuthor({ name: `Yeni Başvuru Geldi.`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
             .setDescription("**• Bilgi:** Onaylamak, reddetmek veya botu eklemek için aşağıdaki butonları kullan.\n\n**• Bot sahibi:**\n" + sahip + "\n**• Bot ismi:**\n**<@" + id + ">**\n**• Bot kullanım şartları:**\nBilinmiyor\n**• Bot gizlilik politikası:**\nBilinmiyor\n\n**Bot prefixi**\n```" + prefix + "```\n**Bot kimliği** ```" + id + "```")
             .setColor("#808080")
             .setThumbnail(link)
