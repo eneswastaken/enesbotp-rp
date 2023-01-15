@@ -145,7 +145,7 @@ client.on('interactionCreate', async interaction => {
 
         const embed = new EmbedBuilder()
             .setAuthor({ name: `Yeni Başvuru Geldi.`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
-            .setDescription("**• Bilgi:** Onaylamak, reddetmek veya botu eklemek için aşağıdaki butonları kullan.\n\n**• Bot Sahibi:** " + sahip + "\n**• Bot ismi:** **<@" + id + ">**\n\n**Bot prefixi**\n" + prefix + " \n**Bot kimliği** " + id + "")
+            .setDescription("**Şuanlık Bakım.**")
             .setColor("#808080")
             .setThumbnail(link)
         let log = louritydb.get(`onay_${interaction.guild.id}`)
