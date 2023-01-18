@@ -14,10 +14,10 @@ module.exports = {
     .format(" D [gün], H [saat], m [dakika], s [saniye]");
     const embed = new EmbedBuilder()
     .setThumbnail("https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png")
-    .setAuthor({ name: `Bot Ekleme Şart!`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
+    .setAuthor({ name: `Mercy Botlist Data Net.`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
     .setDescription("> **:flag_tr: Türkçe Şartlar;**\n> \n> <:r_dikkat:1037060772284604536> | *Botunuz en az 1 hafta önce kurulmalıdır.*\n> <:r_dikkat:1037060772284604536> | *Botunuz en az 10 sunucuda ekli olmalı.*\n> <:r_dikkat:1037060772284604536> | *Botunuzda dm duyuru, özel mesaj gönderme, spam gibi komutlar olmamalıdır.*\n> <:r_dikkat:1037060772284604536> | *Ekleyeceğiniz botun kendinize ait olması gerekmektedir.*\n> \n> **:flag_gb: English Conditions;**\n> \n> <:r_dikkat:1037060772284604536> | *Your bot should be installed at least 1 week ago.*\n> <:r_dikkat:1037060772284604536> | *Your bot must be on at least 10 servers.*\n> <:r_dikkat:1037060772284604536> | *Your bot should not have commands such as dm announcement, private message sending, spam.*\n> <:r_dikkat:1037060772284604536> | *The bot you add must be your own.*")
     .setColor("808080")
-    .setFooter({ text: "Bot Ekleme Şartları!" })
+    .setFooter({ text: `Bot Ekletme Şartları`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
     interaction.reply({embeds: [embed]})
 
   }

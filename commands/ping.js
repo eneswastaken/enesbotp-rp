@@ -12,8 +12,9 @@ module.exports = {
 
 
     interaction.reply({ embeds: [ new EmbedBuilder()
-    .setAuthor({ name: `Moderasyon menüsü | Mercy Botlist!`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
+    .setAuthor({ name: `Güncel Ping | Mercy Botlist!`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
     .setDescription(`• Gecikme değerleri anlık olarak gösterilir, zamanla bu değerler değişebilir.\n\n**• Soket Gecikmesi:** \`143\`\n**• Veritabanı Gecikmesi:** \`${client.ws.ping}\`\n**• Veritabanı Durumu:** \`Bağlı\``)
+    .setFooter({ text: `Mercy Botlist • Data Net.`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
     .setColor("000000")], ephemeral: true })
 
   }
