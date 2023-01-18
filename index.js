@@ -144,9 +144,10 @@ client.on('interactionCreate', async interaction => {
             .setColor("Green")
 
         const embed = new EmbedBuilder()
-            .setAuthor({ name: `Yeni Başvuru Geldi.`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
+            .setAuthor({ name: `Yeni Başvuru Geldi.`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
             .setDescription("**Şuanlık Bakım.**")
             .setColor("#808080")
+            .setFooter({ text: `Mercy Botlist Data Net.`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
             .setThumbnail(link)
         let log = louritydb.get(`onay_${interaction.guild.id}`)
 
