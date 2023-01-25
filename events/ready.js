@@ -26,6 +26,6 @@ module.exports = async (client) => {
   }
 
     console.log(`${client.user.tag} Aktif!`);
-    client.user.setActivity(`🎄 • Mutlu Yıllar | /yardım | #new2023🎅`)
+    client.user.setActivity(`• www.mryuptime.tk Hizmet! | /yardım | #2023`)
     client.user.setStatus("idle");
 };
