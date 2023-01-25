@@ -118,17 +118,14 @@ client.on('interactionCreate', async interaction => {
         const row = new Discord.ActionRowBuilder()
             .addComponents(
                 new Discord.ButtonBuilder()
-                    .setEmoji("<:robot:1033691399926845500>")
                     .setLabel("Botu Ekle")
                     .setStyle(Discord.ButtonStyle.Link)
                     .setURL("https://discord.com/oauth2/authorize?client_id=" + id + "&scope=bot&permissions=0"),
                 new Discord.ButtonBuilder()
-                    .setEmoji("<:Yesil:1033666717974548500>")
                     .setLabel("Onayla")
                     .setStyle(Discord.ButtonStyle.Success)
                     .setCustomId("onayla"),
                 new Discord.ButtonBuilder()
-                    .setEmoji("<:Kirmizi:1033666667181527062>")
                     .setLabel("Reddet")
                     .setStyle(Discord.ButtonStyle.Danger)
                     .setCustomId("reddet")
@@ -144,8 +141,8 @@ client.on('interactionCreate', async interaction => {
             .setColor("Green")
 
         const embed = new EmbedBuilder()
-            .setAuthor({ name: `Yeni Başvuru Geldi.`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
-            .setDescription("**Şuanlık Bakım.**")
+            .setAuthor({ name: `Sıraya Yeni Bot Eklendi!`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
+            .setDescription("Bot Sahibi: " + sahip + "\n\n**İD:** ```" + id + "``` **Prefix:** ```" + prefix + "```")
             .setColor("#808080")
             .setFooter({ text: `Mercy Botlist Data Net.`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
             .setThumbnail(link)
