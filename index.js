@@ -232,10 +232,10 @@ client.on('interactionCreate', async interaction => {
 
         const menu = new Discord.EmbedBuilder()
             .setColor("808080")
-            .setThumbnail("https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png")
-            .setAuthor({ name: `Bot Nasıl Eklenir?`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
+            .setThumbnail("https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=375&height=375")
+            .setAuthor({ name: `Başvuru Nasıl Yapılır?`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=375&height=375' })
             .setDescription("• Bu sunucuda bot ekleme sistemi açık, bot eklemek için **Bot Ekle** butonuna tıklayıp ardından formu doldurmanız yeterli. Herhangi bir sorunda yetkiliye ulaşmayı unutmayın.")
-            .setFooter({ text: "©️ Mercy Botlist #2022" })
+            .setFooter({ text: `©️ Mercy Botlist tarafından sağlanıyor.`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=375&height=375' })
 
         const row1 = new Discord.ActionRowBuilder()
 
