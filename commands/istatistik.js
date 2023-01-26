@@ -13,8 +13,8 @@ module.exports = {
     .duration(client.uptime)
     .format(" D [gün], H [saat], m [dakika], s [saniye]");
     const embed = new EmbedBuilder()
-    .setThumbnail("https://media.discordapp.net/attachments/1064266014671503380/1068234418403160145/Dash_Blue_D_Logo.png?width=281&height=281")
-    .setAuthor({ name: `Duster Bot İstatistik`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418403160145/Dash_Blue_D_Logo.png?width=281&height=281' })
+    .setThumbnail("https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414")
+    .setAuthor({ name: `Duster Bot İstatistik`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
     .addFields({ name: '<:r_tac:1034208114091769866> Bot Sahibi', value: `data#9999`, inline: false})
     .addFields({ name: '<:r_mod:1033846559600807996> Bellek Kullanımı', value: `${(process.memoryUsage().heapUsed /1024 /512).toFixed(2)}MB`, inline: true})
     .addFields({ name: '<:r_ayarlar:1033687954419367936> Çalışma Süresi', value: `${Uptime}`, inline: true})
@@ -28,7 +28,7 @@ module.exports = {
     .addFields({ name: '<:r_bot:1033846888681722007> Bot Kuruluş', value: `05.09.2022`, inline: true})
     .addFields({ name: '<:r_yesil:1034210144260718633> Ping', value: `${client.ws.ping}`, inline: true})
     .setColor("808080")
-    .setFooter({ text: `Duster • Her Geçen Gün Gelişmekte.`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418403160145/Dash_Blue_D_Logo.png?width=281&height=281' })
+    .setFooter({ text: `Duster • Her Geçen Gün Gelişmekte.`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
     interaction.reply({embeds: [embed]})
   }
 };
