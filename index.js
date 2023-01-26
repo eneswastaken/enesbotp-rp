@@ -141,10 +141,10 @@ client.on('interactionCreate', async interaction => {
             .setColor("Green")
 
         const embed = new EmbedBuilder()
-            .setAuthor({ name: `Sıraya Yeni Bot Eklendi!`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
+            .setAuthor({ name: `Sıraya Yeni Bot Eklendi!`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
             .setDescription("Bot Sahibi: " + sahip + "\n\n**İD:** ```" + id + "``` **Prefix:** ```" + prefix + "```")
             .setColor("#808080")
-            .setFooter({ text: `Duster`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
+            .setFooter({ text: `Duster`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
             .setThumbnail(link)
         let log = louritydb.get(`onay_${interaction.guild.id}`)
 
@@ -229,10 +229,10 @@ client.on('interactionCreate', async interaction => {
 
         const menu = new Discord.EmbedBuilder()
             .setColor("808080")
-            .setThumbnail("https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=375&height=375")
-            .setAuthor({ name: `Başvuru Nasıl Yapılır?`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=375&height=375' })
+            .setThumbnail("https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414")
+            .setAuthor({ name: `Başvuru Nasıl Yapılır?`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
             .setDescription("• Bu sunucuda bot ekleme sistemi açık, bot eklemek için **Bot Ekle** butonuna tıklayıp ardından formu doldurmanız yeterli. Herhangi bir sorunda yetkiliye ulaşmayı unutmayın.")
-            .setFooter({ text: `©️ Duster tarafından sağlanıyor.`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=375&height=375' })
+            .setFooter({ text: `©️ Duster tarafından sağlanıyor.`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
 
         const row1 = new Discord.ActionRowBuilder()
 
@@ -353,7 +353,7 @@ client.on('interactionCreate', async interaction => {
         let adminRol = louritydb.get(`adminRol_${interaction.guild.id}`)
 
         const mesaj = new Discord.EmbedBuilder()
-            .setAuthor({ name: `Botlist Sistem Ayarları`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
+            .setAuthor({ name: `Botlist Sistem Ayarları`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
             .addFields(
                 { name: "**<:r_ayarlar:1033687954419367936> Log Kanalı**", value: `<#${log || "Ayarlanmamış!"}>`, inline: true },
                 { name: "**<:r_tik:1033844095149408256> Onay Kanalı**", value: `<#${onayKanal || "Ayarlanmamış!"}>`, inline: true },
@@ -380,21 +380,21 @@ client.on("interactionCreate", async interaction => {
   let message = await interaction.channel.messages.fetch(interaction.message.id)  
   if(interaction.customId == "moderasyon") {
 const embed = new Discord.EmbedBuilder()
-.setAuthor({ name: `Moderasyon menüsü | Duster!`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
+.setAuthor({ name: `Moderasyon menüsü | Duster!`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
 .setDescription("**• /ban -** Sunucudan Kullanıcı Banlaman\n**• /kick -** Sunucudan Kullanıcı Atma\n**• /forceban -** Sunucudan Kalıcı Ban Atar\n**• /unban -** Banlanan Üyenin Banını Kaldırır\n**• /sil -** Kanaldaki Mesajları Temizler\n**• /rol-al -** Beriltilen Kişiden Rolü Alır\n**• /rol-ver -** Beriltilen Kişiye Rol Verir\n**• /abone-rol -** Abone Rol Ayarlarsını!\n**• /abone -** Beriltilen Kişiye Abone Rolü Verirsiniz!")
 .setColor("#808080")
 interaction.reply({embeds: [embed], components: [], ephemeral: true})
   }
   if(interaction.customId == "kayıt") {
     const embed = new Discord.EmbedBuilder()
-    .setAuthor({ name: `Botlist menüsü | Duster!`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
+    .setAuthor({ name: `Botlist menüsü | Duster!`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
     .setDescription("**• /botlist-ayarla -** Basit Kullanışlı Botlist Ayarlaması\n**• /botekleme-şart -** Hazır Bot Ekletme Kuralları")
     .setColor("#808080")
     interaction.reply({embeds: [embed], components: [], ephemeral: true})
   }
   if(interaction.customId == "Kullanıcı") {
     const embed = new Discord.EmbedBuilder()
-    .setAuthor({ name: `Kullanıcı menüsü | Duster!`, iconURL: 'https://media.discordapp.net/attachments/1022843509016895568/1033978189078331392/f5e9db50825d34cd7bbe85a46091c791.png?width=316&height=316' })
+    .setAuthor({ name: `Kullanıcı menüsü | Duster!`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
     .setDescription("**• /ping ** Botun Ping Durumunu Gösterir\n**• /avatar -** Etiketlenen Kişinin Avatarını Atar\n**• /istatistik -** Botun İstatistik Bilgilerini Listeler")
     .setColor("#808080")
     interaction.reply({embeds: [embed], components: [], ephemeral: true})
