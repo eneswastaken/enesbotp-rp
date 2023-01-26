@@ -9,11 +9,11 @@ module.exports = {
   run: async(client, interaction) => {
 
     const embed = new EmbedBuilder()
-    .setAuthor({ name: `Yardım menüsü | Mercy Botlist!`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
+    .setAuthor({ name: `Yardım menüsü | Duster!`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
     .setThumbnail("https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434")
     .setDescription("• Yardım almak için en doğru yerdesin, bir sorunun olursa destek sunucusunda seni bekliyor olacağız.\n\n**<:r_arti:1033844966360879245> | Yenilikler/Güncellemeler**\n• Botlist sistemini yeniledik ve sorunları giderdik. Artık daha kullanışlı. [Daha Fazla Bilgi.](https://discord.gg/ZyQWrgKg66)\n\n**<:r_ayarlar:1033687954419367936> | Komutlar [3]**\n**• Botlist -** Komutları İçin Tıkla!\n**• Moderasyon -** Komutları İçin Tıkla!\n**• Kullanıcı -**Komutları İçin Tıkla!\n\n**<:r_dikkat:1037060772284604536> | Bilgilendirme**\n• Katagoriler arasında geçiş yaparak daha fazla bilgiye ulaş.\n• Daha fazla botlist sunucusu istiyosan [Buraya Tıkla.](https://discord.gg/ZyQWrgKg66)")
     .setColor("808080")
-    .setFooter({ text: `Mercy Botlist • Data Net.`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
+    .setFooter({ text: `Duster • #data#9999 Net`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1064266269907492994/IMG_7693.gif?width=434&height=434' })
     const row = new Discord.ActionRowBuilder()
     .addComponents(
 new Discord.ButtonBuilder()
