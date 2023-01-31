@@ -220,39 +220,39 @@ client.on('interactionCreate', async interaction => {
     }
 })
 
-client.on('interactionCreate', async interaction => {
-    if (interaction.commandName === "botlist-ayarla") {
+//client.on('interactionCreate', async interaction => {
+    //if (interaction.commandName === "botlist-ayarla") {
 
-        if (!interaction.member.permissions.has(Discord.PermissionsBitField.Flags.Administrator)) return;
+        //if (!interaction.member.permissions.has(Discord.PermissionsBitField.Flags.Administrator)) return;
 
-        let botekle = louritydb.get(`botekle_${interaction.guild.id}`)
+        //let botekle = louritydb.get(`botekle_${interaction.guild.id}`)
 
-        const menu = new Discord.EmbedBuilder()
-            .setColor("808080")
-            .setThumbnail("https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414")
-            .setAuthor({ name: `Başvuru Nasıl Yapılır?`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
-            .setDescription("• Bu sunucuda bot ekleme sistemi açık, bot eklemek için **Bot Ekle** butonuna tıklayıp ardından formu doldurmanız yeterli. Herhangi bir sorunda yetkiliye ulaşmayı unutmayın.")
-            .setFooter({ text: `©️ Duster tarafından sağlanıyor.`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
+        //const menu = new Discord.EmbedBuilder()
+            //.setColor("808080")
+            //.setThumbnail("https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414")
+            //.setAuthor({ name: `Başvuru Nasıl Yapılır?`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
+            //.setDescription("• Bu sunucuda bot ekleme sistemi açık, bot eklemek için **Bot Ekle** butonuna tıklayıp ardından formu doldurmanız yeterli. Herhangi bir sorunda yetkiliye ulaşmayı unutmayın.")
+            //.setFooter({ text: `©️ Duster tarafından sağlanıyor.`, iconURL: 'https://media.discordapp.net/attachments/1064266014671503380/1068234418201825320/wB4SYe8GAAhThFpK5m7Bow2Bp_lHE3CoWfMMcu2lrM4rK7Z6S0c3nUXTOKCtPlRKrCTQQCoHNaJEzBeiYK45rP3n.jpg?width=414&height=414' })
 
-        const row1 = new Discord.ActionRowBuilder()
+        //const row1 = new Discord.ActionRowBuilder()
 
-            .addComponents(
-                new Discord.ButtonBuilder()
-                    .setEmoji("<:robot:1033691399926845500>")
-                    .setLabel("Bot Ekle")
-                    .setStyle(Discord.ButtonStyle.Secondary)
-                    .setCustomId("bot-ekle")
-            )
+            //.addComponents(
+                //new Discord.ButtonBuilder()
+                    //.setEmoji("<:robot:1033691399926845500>")
+                    //.setLabel("Bot Ekle")
+                    //.setStyle(Discord.ButtonStyle.Secondary)
+                    //.setCustomId("bot-ekle")
+            //)
 
-        client.channels.cache.get(botekle).send({ embeds: [menu], components: [row1] })
-    }
-});
+        //client.channels.cache.get(botekle).send({ embeds: [menu], components: [row1] })
+    //}
+//});
 
-client.on('interactionCreate', async (interaction) => {
-    if (interaction.customId === "bot-ekle") {
-        await interaction.showModal(lourityModal);
-    }
-})
+//client.on('interactionCreate', async (interaction) => {
+    //if (interaction.customId === "bot-ekle") {
+        //await interaction.showModal(lourityModal);
+    //}
+//})
 
 // Sistemi Sıfırla - Button
 client.on('interactionCreate', async interaction => {
