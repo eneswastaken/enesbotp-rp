@@ -1,7 +1,6 @@
 const Discord = require("discord.js")
 const louritydb = require("croxydb");
 const { messageLink } = require("discord.js");
-// Lourity Code + Ayarlamalı + Slash Botlist Botu - PAYLAŞILMASI KESİNLİKLE YASAKTIR!!
 module.exports = {
     name: "botlist-ayarla",
     description: "Botlist sistemini ayarlarsınız!",

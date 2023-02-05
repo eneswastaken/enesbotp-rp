@@ -12,8 +12,6 @@ const client = new Client({
     retryLimit: 3
 });
 
-// Lourity Code + Ayarlamalı + Slash Botlist Botu - PAYLAŞILMASI KESİNLİKLE YASAKTIR!!
-
 global.client = client;
 client.commands = (global.commands = []);
 
@@ -400,5 +398,3 @@ interaction.reply({embeds: [embed], components: [], ephemeral: true})
     interaction.reply({embeds: [embed], components: [], ephemeral: true})
   }
 })
-
-// Lourity Code + Ayarlamalı + Slash Botlist Botu - PAYLAŞILMASI KESİNLİKLE YASAKTIR!!

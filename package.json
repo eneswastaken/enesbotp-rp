@@ -1,12 +1,12 @@
 {
-  "name": "lourity",
+  "name": "data",
   "version": "9.9.9",
-  "description": "Lourity",
+  "description": "Data",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Lourity",
+  "author": "Data",
   "license": "MIT",
   "dependencies": {
     "@discordjs/rest": "^1.1.0",
