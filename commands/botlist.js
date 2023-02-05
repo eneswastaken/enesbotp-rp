@@ -108,4 +108,3 @@ module.exports = {
         louritydb.set(`ayrildiLog_${interaction.guild.id}`, ayrildiLog.id)
     }
 }
-// Lourity Code + Ayarlamalı + Slash Botlist Botu - PAYLAŞILMASI KESİNLİKLE YASAKTIR!!
